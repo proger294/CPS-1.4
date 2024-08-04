@@ -1,0 +1,90 @@
+.burger-menu {
+  width: 320px;
+  font-family: "TT Lakes Medium";
+  font-size: 16px;
+  line-height: 24px;
+  background-color: $bg-color-white;
+  box-shadow: 10px 0px 100px 0px rgba(145, 144, 144, 0.5);
+  &__inner {
+    padding: 30px 29px 32px 22px;
+  }
+  &__burger-list {
+    margin-top: 46px;
+  }
+  &__contacts {
+    margin-top: 268px;
+  }
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__btn-burger {
+    display: none;
+  }
+
+  &__btn-close {
+    display: flex;
+  }
+
+  &__btn-search {
+    display: flex;
+  }
+  &__logo {
+    margin-right: 60px;
+  }
+}
+
+.logo::before {
+  display: none;
+}
+.burger-list {
+  position: relative;
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  &__item--active {
+    color: $text-gray;
+  }
+  &__item--active::after {
+    content: url(../img/psevdo-el-2.svg);
+    position: absolute;
+    left: 0;
+    margin-left: -22px;
+  }
+}
+.contacts {
+  &__mail {
+    display: block;
+    padding-top: 16px;
+  }
+
+  &__number {
+    display: block;
+    padding-top: 12px;
+    font-family: "TT Lakes Bold";
+    font-size: 24px;
+  }
+}
+.connection {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  &__btn-chat {
+    padding-top: 10px;
+  }
+}
+.languages {
+  padding-top: 40px;
+  display: flex;
+  gap: 7px;
+  &__item {
+    cursor: pointer;
+  }
+
+  &__item--active {
+    color: $text-gray;
+  }
+}
