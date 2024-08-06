@@ -222,13 +222,12 @@ a {
 
 .burger-menu {
   width: 320px;
+  height: 100vh;
   font-family: "TT Lakes Medium";
   font-size: 16px;
   line-height: 24px;
   background-color: #FFFFFF;
   box-shadow: 10px 0px 100px 0px rgba(145, 144, 144, 0.5);
-}
-.burger-menu__inner {
   padding: 30px 29px 32px 22px;
 }
 .burger-menu__burger-list {
@@ -278,13 +277,24 @@ a {
 
 .contacts__mail {
   display: block;
-  padding-top: 16px;
+  margin-top: 16px;
 }
 .contacts__number {
   display: block;
-  padding-top: 12px;
+  margin-top: 12px;
   font-family: "TT Lakes Bold";
   font-size: 24px;
+}
+.contacts__languages {
+  margin-top: 40px;
+  display: flex;
+  gap: 7px;
+}
+.contacts__languages__item {
+  cursor: pointer;
+}
+.contacts__languages__item--active {
+  color: #7E7E82;
 }
 
 .connection {
@@ -294,16 +304,4 @@ a {
 }
 .connection__btn-chat {
   padding-top: 10px;
-}
-
-.languages {
-  padding-top: 40px;
-  display: flex;
-  gap: 7px;
-}
-.languages__item {
-  cursor: pointer;
-}
-.languages__item--active {
-  color: #7E7E82;
 }/*# sourceMappingURL=main.css.map */

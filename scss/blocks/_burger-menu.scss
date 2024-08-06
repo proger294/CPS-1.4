@@ -1,13 +1,13 @@
 .burger-menu {
   width: 320px;
+  height: 100vh;
   font-family: "TT Lakes Medium";
   font-size: 16px;
   line-height: 24px;
   background-color: $bg-color-white;
   box-shadow: 10px 0px 100px 0px rgba(145, 144, 144, 0.5);
-  &__inner {
-    padding: 30px 29px 32px 22px;
-  }
+  padding: 30px 29px 32px 22px;
+
   &__burger-list {
     margin-top: 46px;
   }
@@ -57,14 +57,27 @@
 .contacts {
   &__mail {
     display: block;
-    padding-top: 16px;
+    margin-top: 16px;
   }
 
   &__number {
     display: block;
-    padding-top: 12px;
+    margin-top: 12px;
     font-family: "TT Lakes Bold";
     font-size: 24px;
+  }
+
+  &__languages {
+    margin-top: 40px;
+    display: flex;
+    gap: 7px;
+    &__item {
+      cursor: pointer;
+    }
+
+    &__item--active {
+      color: $text-gray;
+    }
   }
 }
 .connection {
@@ -76,15 +89,4 @@
     padding-top: 10px;
   }
 }
-.languages {
-  padding-top: 40px;
-  display: flex;
-  gap: 7px;
-  &__item {
-    cursor: pointer;
-  }
 
-  &__item--active {
-    color: $text-gray;
-  }
-}
